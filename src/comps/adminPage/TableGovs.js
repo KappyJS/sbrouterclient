@@ -7,7 +7,7 @@ export default class componentName extends Component {
         this.state = {isFetching : true}
     }
     componentDidMount(){
-        fetch('http://localhost:3001/admin')
+        fetch('https://sbrouterserver.herokuapp.com/admin')
         .then(response => response.json())
         .then(data => {
              this.setState({data:data,isFetching:false})
