@@ -18,7 +18,7 @@ import SecondBlock from './secondBlock'
     }
     componentDidMount(){
         console.log(this.props.selected)
-        fetch("https://sbrouterserver.herokuapp.com/"+this.props.match.params.id, {
+        fetch("https://sbrouterserver.herokuapp.com/govs"+this.props.match.params.id, {
             method: "POST",
             headers: {
               Accept: "application/json, text/plain, */*",
