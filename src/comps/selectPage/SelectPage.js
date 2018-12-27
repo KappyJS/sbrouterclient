@@ -15,7 +15,7 @@ class SelectPage extends Component{
     }
 
     componentDidMount(){
-        fetch('http://localhost:3001')
+        fetch('https://sbrouterserver.herokuapp.com/')
         .then(response => response.json())
         .then(data => {
             this.props.dispatch(actionCreators.loadSPData(data))

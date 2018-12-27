@@ -51,7 +51,7 @@ class InputForm extends Component {
 
     this.setState({ choosen: tmp.choosen });
     this.props.dispatch(actionCreators.notChooseReqs(tmp.choosen.requirements));
-    fetch("http://localhost:3001/govs", {
+    fetch("https://sbrouterserver.herokuapp.com/govs", {
       method: "POST",
       headers: {
         Accept: "application/json, text/plain, */*",
